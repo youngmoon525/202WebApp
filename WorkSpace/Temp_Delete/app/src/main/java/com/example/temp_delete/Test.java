@@ -9,6 +9,8 @@ public class Test {
     void iMethod(){
         sV1 = 1 ;
         sV2 = 2 ;
+
+        int test = 0 ;//이거 밖에서 쓸수잇을까?
     }
 
     // 인스턴스멤버 3개 만들기.
@@ -24,6 +26,8 @@ public class Test {
     // lClass에 있는 모든 멤버를 사용하기.
     // 수단과 방법 상관없음.
     // 왜 이렇게 썼는지 이유까지 쓰면 완.
+    // 메소드 내부에서 만든 모든것들은 지역멤버라고 한다. ( 지역밖에서는 사용 x )
+    // local <= 지역
     void lMethod(){
         class lClass{
             String lV ;
@@ -31,6 +35,21 @@ public class Test {
 
             }
         }
+        lClass lc = new lClass();
+        lc.lV = "aa";
+        lc.lMethod();
+    }
+
+    int lMethod2(){ // return은 모든 내가아는것들이 올수있음. return이필요한이유는
+                    //메소드는 메소드가 끝나고 나서 내부에 있는 모든것들을 메모리에서 비움.
+                    //따라서 메소드가 실행되고나서 결과를 받고싶다면 반드시 return이 필요하다.
+        class lClass{
+            int a , b;
+        }
+        lClass lc = new lClass();
+        lc.a = 10;
+        lc.b = 20;
+        return lc.a + lc.b;
     }
 
 
