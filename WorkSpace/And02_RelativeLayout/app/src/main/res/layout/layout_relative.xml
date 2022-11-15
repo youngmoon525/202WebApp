@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--태그 변경 시 내부 정렬 규칙이 바뀜.-->
+    <!--코드로 버튼 어떻게 넣을까??????-->
+
+    <!-- center : 가로 축 ,세로 축 , 부모 기준-->
+
+    <Button
+        android:id="@+id/btn1"
+        android:backgroundTint="#18590B"
+        android:text="버튼1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        />
+
+    <Button
+        android:id="@+id/btn2"
+        android:backgroundTint="#70826C"
+        android:text="버튼2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/btn3"
+        android:backgroundTint="#08083D"
+        android:text="버튼3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        />
+
+    <Button
+        android:id="@+id/btn4"
+        android:backgroundTint="#5D6C3B"
+        android:text="버튼4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        />
+
+    <Button
+        android:id="@+id/btn5"
+        android:backgroundTint="#189334"
+        android:text="버튼5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        />
+    <Button
+        android:id="@+id/btn6"
+        android:backgroundTint="#189334"
+        android:text="버튼6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        />
+
+    <Button
+        android:id="@+id/btn7"
+        android:backgroundTint="#189334"
+        android:text="버튼7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        />
+
+    <Button
+        android:id="@+id/btn8"
+        android:backgroundTint="#189334"
+        android:text="버튼8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        />
+
+    <Button
+        android:id="@+id/btn9"
+        android:backgroundTint="#189334"
+        android:text="버튼9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        />
+
+    <Button
+        android:id="@+id/btn10"
+        android:backgroundTint="#E01A4C"
+        android:text="버튼10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/btn1"
+        android:layout_above="@id/btn1"
+        />
+
+    <Button
+        android:id="@+id/btn11"
+        android:backgroundTint="#E01A4C"
+        android:text="버튼11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/btn1"
+        android:layout_below="@id/btn1"
+        />
+
+
+    <Button
+        android:id="@+id/btn12"
+        android:backgroundTint="#E01A4C"
+        android:text="버튼12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/btn1"
+        android:layout_alignBaseline="@id/btn1"
+        />
+
+    <Button
+        android:id="@+id/btn13"
+        android:backgroundTint="#E01A4C"
+        android:text="버튼12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btn1"
+        android:layout_alignBaseline="@id/btn1"
+        />
+</RelativeLayout>
