@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="자판기 프로그램"
+        style="@style/title"/>
+    <Button
+        android:backgroundTint="#989595"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <!--  상품 첫번째 줄 레이아웃   -->
+    <LinearLayout
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!--  콜라 상품 레이아웃      -->
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                style="@style/img_p"
+                android:src="@drawable/img1" />
+            <!-- 상품명, 가격  레이아웃 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_p1_name"
+                    android:text="콜라"
+                    android:layout_marginRight="5dp"
+                    style="@style/manin_style"/>
+                <TextView
+                    android:id="@+id/tv_p1_price"
+                    android:text="800"
+                    style="@style/manin_style"/>
+                <TextView
+                    android:text="원"
+                    style="@style/manin_style"/>
+            </LinearLayout>
+            <!--수량 "개남음" 나눔 레이아웃 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_p1_qty"
+                android:text="10"
+                style="@style/manin_style"/>
+             <TextView
+                 android:text="개 남음"
+                 style="@style/manin_style"  />
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_order_p1"
+               style="@style/btn_order"/>
+        </LinearLayout>
+        <!--  사이다 상품 레이아웃      -->
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:src="@drawable/img2"
+                style="@style/img_p"/>
+            <!-- 상품명, 가격  레이아웃 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_p2_name"
+                    android:text="사이다"
+                    android:layout_marginRight="5dp"
+                    style="@style/manin_style"/>
+                <TextView
+                    android:id="@+id/tv_p2_price"
+                    android:text="800"
+                    style="@style/manin_style"/>
+                <TextView
+                    android:text="원"
+                    style="@style/manin_style"/>
+            </LinearLayout>
+            <!--수량 "개남음" 나눔 레이아웃 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_p2_qty"
+                    android:text="10"
+                    style="@style/manin_style"/>
+                <TextView
+                    android:text="개 남음"
+                    style="@style/manin_style"  />
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_order_p2"
+                style="@style/btn_order"/>
+        </LinearLayout>
+    </LinearLayout>
+    <!--  상품 두번째 줄 레이아웃   -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!--   환타 상품 레이아웃      -->
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                style="@style/img_p"
+                android:src="@drawable/img3" />
+            <!-- 상품명, 가격  레이아웃 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_p3_name"
+                    android:text="환타"
+                    android:layout_marginRight="5dp"
+                    style="@style/manin_style"/>
+                <TextView
+                    android:id="@+id/tv_p3_price"
+                    android:text="700"
+                    style="@style/manin_style"/>
+                <TextView
+                    android:text="원"
+                    style="@style/manin_style"/>
+            </LinearLayout>
+            <!--수량 "개남음" 나눔 레이아웃 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_p3_qty"
+                    android:text="10"
+                    style="@style/manin_style"/>
+                <TextView
+                    android:text="개 남음"
+                    style="@style/manin_style"  />
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_order_p3"
+                style="@style/btn_order"/>
+        </LinearLayout>
+        <!--  비락식혜 상품 레이아웃      -->
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:src="@drawable/img4"
+                style="@style/img_p"/>
+            <!-- 상품명, 가격  레이아웃 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_p4_name"
+                    android:text="비락식혜"
+                    android:layout_marginRight="5dp"
+                    style="@style/manin_style"/>
+                <TextView
+                    android:id="@+id/tv_p4_price"
+                    android:text="700"
+                    style="@style/manin_style"/>
+                <TextView
+                    android:text="원"
+                    style="@style/manin_style"/>
+            </LinearLayout>
+            <!--수량 "개남음" 나눔 레이아웃 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_p4_qty"
+                    android:text="10"
+                    style="@style/manin_style"/>
+                <TextView
+                    android:text="개 남음"
+                    style="@style/manin_style"  />
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_order_p4"
+                style="@style/btn_order"/>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 금액 입력 레이아웃 -->
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/et_insert"
+            android:inputType="number"
+            android:hint="금액을 입력하세요"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btn_insert"
+            style="@style/btn_insert"/>
+    </LinearLayout>
+    <!--  잔액 텍스트뷰   -->
+    <TextView
+        android:id="@+id/tv_r_money"
+        android:text="잔액 : 0원"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <!-- 잔돈반환 버튼 뷰 -->
+    <Button
+        android:id="@+id/btn_return"
+       style="@style/btn_return"/>
+</LinearLayout>
