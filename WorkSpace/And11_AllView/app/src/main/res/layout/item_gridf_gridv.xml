@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+
+    <FrameLayout
+        android:layout_width="80dp"
+        android:layout_height="50dp">
+        <ImageView
+            android:src="@drawable/ic_launcher_foreground"
+            android:id="@+id/imgv1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+        <ImageView
+            android:visibility="gone"
+            android:src="@drawable/ic_launcher_background"
+            android:id="@+id/imgv2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/tv_name"
+        android:text="아무값"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/btn_change"
+        android:text="이미지 바꾸기"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
