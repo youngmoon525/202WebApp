@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".friendlist.FriendFragment"
-    android:orientation="vertical"
     >
+<!--스크롤뷰는 하나의 자식요소만 가질수있기때문에
+여러개의 요소가 있다면 하나로 꼭 묶어줄것!!
+-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
 
     <ImageView
         android:layout_margin="5dp"
@@ -65,5 +74,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"/>
 
+    </LinearLayout>
 
-</LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

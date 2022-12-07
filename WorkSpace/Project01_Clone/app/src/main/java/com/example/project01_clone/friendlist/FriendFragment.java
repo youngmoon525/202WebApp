@@ -45,7 +45,7 @@ public class FriendFragment extends Fragment {
         }
 
         recv_friend_frag = v.findViewById(R.id.recv_friend_frag);
-        recv_friend_frag.setAdapter(new FriendAdapter(inflater , list));
+        recv_friend_frag.setAdapter(new FriendAdapter(inflater , list , getContext()));
         recv_friend_frag.setLayoutManager(new LinearLayoutManager(getContext()
         ,RecyclerView.VERTICAL,false));
         return v;

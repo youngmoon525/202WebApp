@@ -1,5 +1,7 @@
 package com.example.project01_clone.friendlist;
 
+import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,11 +21,14 @@ public class FriendAdapter extends RecyclerView.Adapter<FriendAdapter.ViewHolder
 
     LayoutInflater inflater;
     ArrayList<FriendDTO> list;
+    Context context;
 
-    public FriendAdapter(LayoutInflater inflater, ArrayList<FriendDTO> list) {
+    public FriendAdapter(LayoutInflater inflater, ArrayList<FriendDTO> list, Context context) {
         this.inflater = inflater;
         this.list = list;
+        this.context = context;
     }
+
 
     @NonNull
     @Override
@@ -48,6 +53,23 @@ public class FriendAdapter extends RecyclerView.Adapter<FriendAdapter.ViewHolder
         h.imgv_friend_profile.setImageResource(list.get(i).getImgRes());
         h.tv_friend_name.setText(list.get(i).getName());
         h.tv_friend_msg.setText(list.get(i).getMsg());
+        // 아이템을 클릭 했을때 액티비티가 나올수있게 코딩해보기..
+        // 액티비티를 띄울때 꼭 필요한것 ( 현재 화면의 정보 ??? )==> 용어 : ( Context )
+        // Context는 일반 클래스에서 바로 접근 x <= 화면에 나오는 클래스로부터 받아옴
+        // 꼭필요한것 2 : 통신을 통해 액티비티를 띄우게 하는 객체 ==> 용어 :( Intent  )
+        final int idx = i;
+        h.imgv_friend_profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context , DetailActivity.class);
+                intent.putExtra("dto" , list.get(idx) );// 오류 발생 원인 : ?
+                context.startActivity(intent);
+            }
+        });
+
+        // Intent intent = new Intent ( MainActivity.this , DetailActivity.class )
+
+
     }
 
     @Override
