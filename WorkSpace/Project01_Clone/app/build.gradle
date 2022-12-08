@@ -36,4 +36,13 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.4'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
+
+    //2022.12.08 KYM : 이미지를 동그랗게 보이게 처리를 위한 LIB
+    //=> 사용 모듈 : external pakcage
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    //2022.12.08 KYM : 외부 이미지를 편하게 사용하기 위한 LIB
+    //=> 사용 모듈 : external pakcage
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+
 }
