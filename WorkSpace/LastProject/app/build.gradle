@@ -45,4 +45,8 @@ dependencies {
     implementation 'com.squareup.retrofit2:retrofit:2.5.0'
     //2022 . 12 . 12 KYM : Retroift data 컨버팅용 (데이터)
     implementation 'com.squareup.retrofit2:converter-scalars:2.5.0'
+
+    //2022 . 12 . 20 KYM : 카카오 로그인 API
+    implementation "com.kakao.sdk:v2-user:2.12.0"
+
 }
